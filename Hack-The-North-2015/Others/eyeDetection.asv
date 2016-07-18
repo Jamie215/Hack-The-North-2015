@@ -1,0 +1,8 @@
+function [imout] = eyeDetection(imin)
+    if()
+    A = rgb2gray(imin);
+    A = imadjust(A);
+    B = edge(A);
+    C = bwareaopen(B,8);
+    imout = bwmorph(C,'dilate',2);
+end

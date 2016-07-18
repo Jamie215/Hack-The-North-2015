@@ -1,0 +1,11 @@
+function [fbbout] = faceDetection(fbbin)
+    if isempty(fbbin)
+        imout = 0;
+    end
+    if ~isempty(fbbin)
+        fsize = size(fbb);
+        if fsize(1) > 1
+            
+        end
+    end
+end
